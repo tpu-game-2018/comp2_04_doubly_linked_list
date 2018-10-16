@@ -14,14 +14,19 @@ int main(int argc, char *argv[])
 		int n = atoi(str);
 		if (n == 0)
 		{
-			for (int i = j; i == 0; i--)
+			for (int i = j; i > 0; i--)
 			{
 				printf("%d\n", array[i]);
+				if(i > 1)
+				{
+					printf(",");
+				}
 			}
 		}
 		else if (n == 100)
 		{
-
+			//for(int i)
+			//array[i] = array[i+1];
 		}
 		else if (n == -100)
 		{
