@@ -25,8 +25,10 @@ int main(int argc, char *argv[])
 		}
 		else if (n == 100)
 		{
-			//for(int i)
-			//array[i] = array[i+1];
+			for(int i = 1;i==j;i++)
+			{
+				array[i] = array[i+1];
+			}
 		}
 		else if (n == -100)
 		{
