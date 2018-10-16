@@ -29,6 +29,7 @@ int main(int argc, char *argv[])
 			{
 				array[i] = array[i+1];
 			}
+			j--;
 		}
 		else if (n == -100)
 		{
