@@ -18,9 +18,9 @@ int main(int argc, char *argv[])
         array[index]=-n;
          
             tmp=array[index];
-        for(i=index;i>0;i++){
+        for(i=index;i>0;i--){
    
-             array[index]=array[index-1];
+             array[i]=array[i-1];
          }
             array[0]=tmp;
             index++;
