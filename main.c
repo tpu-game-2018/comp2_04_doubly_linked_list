@@ -4,7 +4,7 @@ int main(int argc, char *argv[])
 {
     char str[100];
     int array[100];
-    int index=0,i;
+    int index=0,i,tmp;
     
     while(fgets(str, sizeof(str), stdin)){
         int n=atoi(str);
