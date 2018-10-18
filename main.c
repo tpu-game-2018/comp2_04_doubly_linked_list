@@ -14,6 +14,11 @@ int main(int argc, char *argv[])
         index++;
         }
         
+        if(-99<=n&&n<0){
+        array[index]=-n;
+        index++;
+        }
+        
         else if(n==100){
             printf("%d\n",array[index-1]);
             index--;
