@@ -16,7 +16,15 @@ int main(int argc, char *argv[])
         
         if(-99<=n&&n<0){
         array[index]=-n;
-        index++;
+         
+            tmp=array[index];
+        for(i=index;i>0;i++){
+   
+             array[index]=array[index-1];
+         }
+            array[0]=tmp;
+            index++;
+            
         }
         
         else if(n==100){
