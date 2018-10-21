@@ -57,8 +57,8 @@ int main(int argc, char *argv[])
                  n[j] = n[j - 1];
              }
              
-             n[0] = -input;
-            n[i] = -input;
+             n[0] = -in;
+            n[i] = -in;
              i++;
         }
         
