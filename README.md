@@ -19,7 +19,7 @@
 [![Build Status](https://travis-ci.org/oonuki1030/04_doubly_linked_list.svg?branch=master)](https://travis-ci.org/oonuki1030/04_doubly_linked_list)
 
 # 今回の問題
-
+[![Build Status](https://travis-ci.org/t-kougei-game-comp-2018/04_doubly_linked_list.svg?branch=master)](https://travis-ci.org/oonuki1030/04_doubly_linked_list)
 双方向リストの勉強です。
 
 入力される文字をリストに順次格納して、取り出すように指示されたら、要素を削除して、その際に削除したデータの値を出力してください。
