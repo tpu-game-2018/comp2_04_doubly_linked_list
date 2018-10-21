@@ -16,7 +16,7 @@
 
 # テスト結果
 
-[![Build Status](https://travis-ci.org/oonuki1030.svg?branch=master)](https://travis-ci.org/oonuki1030)
+[![Build Status](https://travis-ci.org/oonuki1030/04_doubly_linked_list.svg?branch=master)](https://travis-ci.org/oonuki1030/04_doubly_linked_list)
 
 # 今回の問題
 
