@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
         int input = atoi(str);
         
         
-        if(input > 0 && i == 0)
+        if(input > 0 && i == 0 && input < 100)
 
         {
 
@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
             i++;
 
         }
-        else if(input < 0 && i == 0)
+        else if(input < 0 && i == 0 && input < -100)
 
         {
 
@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 
         }
 
-        else if(input > 0 && i > 0)
+        else if(input > 0 && i > 0 && input > 100)
 
         {
 
@@ -48,7 +48,7 @@ int main(int argc, char *argv[])
 
         }
         
-        else if(input < 0 && i > 0)
+        else if(input < 0 && i > 0 && input > -100)
 
         {
 
