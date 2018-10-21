@@ -62,5 +62,5 @@ int main(int argc, char *argv[])
              i++;
         }
         
-        retuen 0;
+        return 0;
     }
