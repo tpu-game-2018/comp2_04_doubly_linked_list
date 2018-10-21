@@ -51,18 +51,8 @@ int main(int argc, char *argv[])
         else if(input < 0 && i > 0 && input > -100)
 
         {
-
-            for(j = i; j > 0; j--)
-
-            {
-
-                array[j] = array[j - 1];
-
-            }
-
             
-
-            array[0] = -input;
+            array[i] = -input;
 
             i++;
 
