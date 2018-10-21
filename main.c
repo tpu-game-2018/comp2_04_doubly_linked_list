@@ -125,7 +125,7 @@ int main(int argc, char *argv[])
 
             printf("%d",array[i -1]);
             
-            array[i - 1] = \0;
+            array[i - 1] = 0;
              
             i--;
 
