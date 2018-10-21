@@ -8,7 +8,7 @@ int main(int argc, char *argv[])
     int j;
     
     while(fgets(str, sizeof(str), stdin)){
-        int in = out(str);
+        int in = atoi(str);
          
          
          if(in > 0 && i == 0 && in < 100)
