@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
             printf("%d\n",array[0]);
          for(i=0;i<index-1;i++){
              array[i]=array[i+1];
-         }
+          }
             index--;
         }
         
