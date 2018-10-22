@@ -2,7 +2,7 @@
 
 int main(int argc, char *argv[]) 
 {
-    char str[7];
+    char str[100];
     int i=0,j,x,a[100];
     while(fgets(str, sizeof(str), stdin)){
         x=atoi(str);
@@ -11,7 +11,9 @@ int main(int argc, char *argv[])
             i++;
         }
         else if(-100<x&&x<0){
-            a[i]=-x;
+            for(j=i-1;j>0;j++)
+                a[j]=a[j-1]
+            a[0]=-x;
             i++;
         else if(x==100){
             printf("%d\n",a[0]);
