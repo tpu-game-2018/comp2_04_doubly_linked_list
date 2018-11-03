@@ -16,14 +16,14 @@ int main(int argc, char *argv[])
             a[0]=x;
             i++;
         else if(x==100){
-            printf("%d\n",a[0]);
-            for(j=0;j<i-1;j++)
-                a[j]=a[j+1];
+            printf("%d\n",a[i-1]);
             i--;
         }
         else if(x==-100){
-            printf("%d\n",a[i-1]);
-            i--;
+            printf("%d\n",a[0]);
+            for(j=0;j<i-1;j++)
+                a[j]=a[j+1];
+            i--;    
         }
         else if(x==0){
             for(j=i-1;j>=0;j--){
