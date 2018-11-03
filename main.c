@@ -3,9 +3,9 @@
 int main(int argc, char *argv[]) 
 {
     char str[100];
-    int i=0,j,x,a[100];
+    int i=0,j,a[100];
     while(fgets(str, sizeof(str), stdin)){
-        x=atoi(str);
+        int x=atoi(str);
         if(0<x&&x<100){
             a[i]=x;
             i++;
