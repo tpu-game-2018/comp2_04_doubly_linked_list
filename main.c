@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
             i--;    
         }
         else if(x==0){
-            for(j=i-1;j>=0;j--){
+            for(j=i;j>=0;j--){
                 printf("%d",a[j]);
                 if(j>0)
                     printf(",");
