@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
             i++;
         }
         else if(-100<x&&x<0){
-            for(j=i;j>0;j++)
+            for(j=i;j>0;j--)
                 a[j]=a[j-1];
             a[0]=-x;
             i++;
