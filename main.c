@@ -10,22 +10,23 @@ int main(int argc, char *argv[])
             a[i]=x;
             i++;
         }
-        if(-100<x&&x<0){
+        else if(-100<x&&x<0){
             for(j=i;j>0;j++)
                 a[j]=a[j-1];
             a[0]=-x;
             i++;
-        if(x==100){
+        }
+        else if(x==100){
             printf("%d\n",a[i-1]);
             i--;
         }
-        if(x==-100){
+        else if(x==-100){
             printf("%d\n",a[0]);
             for(j=0;j<i-1;j++)
                 a[j]=a[j+1];
             i--;    
         }
-        if(x==0){
+        else if(x==0){
             for(j=i-1;j>=0;j--){
                 printf("%d",a[j]);
                 if(j>0)
@@ -34,6 +35,5 @@ int main(int argc, char *argv[])
             printf("\n");
         }
     }
-
     return 0;
 }
