@@ -24,15 +24,18 @@ int push2(data_t push_data)
 	int tmp,i;
 	if (index < 100) {
 		stack_data[index] = -push_data;
-		index++;
 		
 			tmp = stack_data[index];
-			for (i = index; i>0; i++) {
 
-				stack_data[index] = stack_data[index - 1];
+			for (i = index; i>0; i--) {
+
+				stack_data[i] = stack_data[i - 1];
 			}
+
+
 			stack_data[0] = tmp;
 			index++;
+			
 			return 1;
 	}
 
