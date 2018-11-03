@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
         }
         else if(-100<x&&x<0){
             for(j=i;j>0;j++)
-                a[j]=a[j-1]
+                a[j]=a[j-1];
             a[0]=-x;
             i++;
         else if(x==100){
@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
             i--;    
         }
         else if(x==0){
-            for(j=i;j>=0;j--){
+            for(j=i-1;j>=0;j--){
                 printf("%d",a[j]);
                 if(j>0)
                     printf(",");
