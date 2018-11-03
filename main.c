@@ -24,6 +24,7 @@ int push2(data_t push_data)
 	int tmp,i;
 	if (index < 100) {
 		stack_data[index] = -push_data;
+		index++;
 
 			tmp = stack_data[index];
 			for (i = index; i>0; i++) {
