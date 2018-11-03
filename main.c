@@ -7,12 +7,33 @@ typedef int data_t;
 data_t stack_data[100];
 int index;
 int n;
-int push(data_t push_data)
+int push1(data_t push_data)
 {
 	if (index < 100) {
 		stack_data[index] = push_data;
 		index++;
 		return 1;
+	}
+	else {
+		return 0;
+	}
+}
+
+int push2(data_t push_data)
+{
+	int tmp,i;
+	if (index < 100) {
+		stack_data[index] = -push_data;
+
+			tmp = stack_data[index];
+			for (i = index; i>0; i++) {
+
+				stack_data[index] = stack_data[index - 1];
+			}
+			stack_data[0] = tmp;
+			index++;
+
+		
 	}
 	else {
 		return 0;
@@ -73,7 +94,11 @@ int main(int argc, char *argv[])
 		n = atoi(str);
 
 		if (1 <= n && n <= 99) {
-			push(n);
+			push1(n);
+		}
+
+		if (-99 <= n && n<0) {
+			push2(n);
 		}
 
 		if (n==100) {
