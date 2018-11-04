@@ -1,13 +1,16 @@
 #include <stdio.h>
 #include<stdlib.h>
+#include<malloc.h>
+
+
 
 typedef int data_t;
 
 
-data_t stack_data[100];
 int index;
 int n;
-int push1(data_t push_data)
+
+int push1(data_t push_data, data_t *stack_data)
 {
 	if (index < 100) {
 		stack_data[index] = push_data;
@@ -19,7 +22,7 @@ int push1(data_t push_data)
 	}
 }
 
-int push2(data_t push_data)
+int push2(data_t push_data, data_t *stack_data)
 {
 	int tmp,i;
 	if (index < 100) {
@@ -43,7 +46,7 @@ int push2(data_t push_data)
 		return 0;
 	}
 }
-int pop1(data_t *pop_data)
+int pop1(data_t *pop_data, data_t *stack_data)
 {
 
 	if (index > 0) {
@@ -57,7 +60,7 @@ int pop1(data_t *pop_data)
 	}
 }
 
-int pop2(data_t *pop_data)
+int pop2(data_t *pop_data, data_t *stack_data)
 {
 	int i;
 
@@ -75,7 +78,7 @@ int pop2(data_t *pop_data)
 	}
 }
 
-void stackPrint()
+void stackPrint(data_t *stack_data)
 {
 	int i;
 
@@ -91,39 +94,52 @@ void stackPrint()
 
 int main(int argc, char *argv[])
 {
+	
+	
+	
 	char str[100];
 	int p;
 	index = 0;
+	data_t *stack_data;
+	
+
+	stack_data = (int*)malloc(sizeof(int)*100);
+	
+
 	while (fgets(str, sizeof(str), stdin)) {
+		
 		n = atoi(str);
 
 		if (1 <= n && n <= 99) {
-			push1(n);
+			push1(n, stack_data);
 		}
 
 		if (-99 <= n && n<0) {
-			push2(n);
+			push2(n, stack_data);
 		}
 
 		if (n==100) {
-			pop1(&p);
+			pop1(&p, stack_data);
 			printf("%d", p);
 			printf("\n");
 
 		}
 
 		if (n == -100) {
-			pop2(&p);
+			pop2(&p, stack_data);
 			printf("%d", p);
 			printf("\n");
 		}
 
 		if (n == 0) {
-			stackPrint();
+			stackPrint(stack_data);
 		}
 
 
 	}
+
+	
+	free(stack_data);
 
 	return 0;
 }
