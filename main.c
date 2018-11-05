@@ -3,7 +3,7 @@
 
 int main(int argc, char *argv[])
 {
-	char str[7];
+	char str[100];
 	char array[100];
 	int i = 0;
 	int j = 0;
