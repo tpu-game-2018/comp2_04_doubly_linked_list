@@ -55,6 +55,7 @@ int main(int argc, char *argv[])
             			i--;
 				printf("\n");
         		}
+		}
          	else if(n == -100)
         	{
             		printf("%d",array[i -1]);
