@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
             		array[0] = n;
             		i++;
         	}
-        		else if(n < 0 && i == 0 && n > -100)
+        	else if(n < 0 && i == 0 && n > -100)
         	{
             		array[0] = -n;
             		i++;
