@@ -6,7 +6,7 @@ int main(int argc, char *argv[])
 	char str[100];
 	char array[100];
 	int i = 0;
-	int j = 0;
+	int j ;
 
 	while (fgets(str, sizeof(str), stdin)) {
   		int n = atoi(str);
@@ -52,9 +52,9 @@ int main(int argc, char *argv[])
             		for(j = 0; j < i - 1; j++)
             		{
                 		array[j] = array[j + 1];
-            			i--;
-				printf("\n");
-        		}
+			}
+			i--;
+			printf("\n");	
 		}
          	else if(n == -100)
         	{
